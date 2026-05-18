@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 6 meses de namoro! </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="logo.png" alt="" width="50px">
+        </div>
+        <nav>
+            <a href="#"> Início</a>
+            <a href="#"> Séries</a>
+            <a href="#"> Filmes</a>
+            <a href="#"> Minha lista</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="conteudo">
+            <p class="titulo"> Enzo e Manuella </p>
+            <p class="detalhes">
+                <span> 14 DE NOVEMBRO, 1 TEMPORADA</span>
+                <span class="stars">
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                </span>
+                <p class="descricao">
+                    Nossa história é digna de filme e gostaria de colocar ela na Netflix, e foi isso que fiz... Eu sou muito feliz ao seu lado Manuella, me sinto em paz sabendo que estou ao lado da pessoa certa, você é incrível e amo todos os seus detalhes, até os que parece imperceptíveis. Você é linda por fora mas é extremamente linda por dentro também, você ilumina aonde passa com esse sorriso maravilhos que me encantou desde o dia em que te conheci.
+                    Eu te amo e te quero para o resto da minha vida. Minha mulher e futura mãe dos meus filhos!
+                </p>
+                <div class="botoes">
+                    <button id = "playVideo"> 
+                        <i class="fa-solid fa-play"></i> 
+                        Assistir
+                    </button>
+                    <button> 
+                        <i class="fa-solid fa-star"></i> 
+                        Favorito
+                    </button>
+                </div>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="momentos">
+        <h2>Nossos Melhores Momentos </h2>
+
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"> <img src="./fotos/2.jpg"> </div>
+            <div class="swiper-slide"> <img src="./fotos/4.jpg"> </div>
+            <div class="swiper-slide"> <img src="./fotos/5.jpg"> </div>
+            <div class="swiper-slide"> <img src="./fotos/8.jpg"> </div>
+            <div class="swiper-slide"> <img src="./fotos/6.jpg"> </div>
+            <div class="swiper-slide"> <img src="./fotos/7.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/9.png"> </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        2026 - Enzo Kuwamoto
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction:false,
+            },
+            slidesPerView:2,
+            spaceBetween: 10,
+            loop:true,
+            breakpoints: {
+                600: {
+                    loop:true,
+                    slidesPerView:3,
+                    spaceBetween: 15,
+                },
+                900: {
+                    loop:true,
+                    slidesPerView:4,
+                    spaceBetween: 40,       
+                }
+            }
+            });
+    </script>
+
+    <!-- MODAL VIDEO -->
+
+    <div class="video-modal" id="videoModal">
+
+    <div class="video-content">
+
+        <span class="close-video" id="closeVideo">
+            &times;
+        </span>
+
+        <video controls id="videoPlayer">
+
+            <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+            >
+
+        </video>
+
+    </div>
+
+</div>
+<!-- MODAL VIDEO -->
+
+<div class="video-modal" id="videoModal">
+
+    <div class="video-content">
+
+        <span class="close-video" id="closeVideo">
+            &times;
+        </span>
+
+        <video controls id="videoPlayer">
+
+            <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+</div>
+</body>
+</html>
