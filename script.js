@@ -55,7 +55,7 @@ playVideo.addEventListener("click", () => {
 
     videoModal.classList.add("active");
 
-    videoPlayer.play();
+    videoPlayer.src += "?autoplay=1";
 
 });
 
@@ -65,7 +65,7 @@ closeVideo.addEventListener("click", () => {
 
     videoModal.classList.remove("active");
 
-    videoPlayer.pause();
+    videoPlayer.src = videoPlayer.src.replace("?autoplay=1", "");
 
 });
 
@@ -77,7 +77,7 @@ videoModal.addEventListener("click", (e) => {
 
         videoModal.classList.remove("active");
 
-        videoPlayer.pause();
+        videoPlayer.src = videoPlayer.src.replace("?autoplay=1", "");
     }
 
 });
